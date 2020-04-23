@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.intro-shelf {
+    margin-top: 0;
+    color: rgba(27,31,35,.85);
+    background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 60%,#fff),linear-gradient(70deg,#dbedff 32%,#ebfff0);
+    border-bottom: #fff;
+}
+.shelf {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fefefe;
+    border-bottom: 1px solid #eff1f3;
+}
+.shelf-content {
+    width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+.mx-auto {
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+.width-full {
+    width: 100%!important;
+}
+.shelf-title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+.intro-shelf .shelf-lead {
+    color: rgba(27,31,35,.7);
+}
+.h2 {
+    font-size: 24px;
+	font-weight=600;
+}
+
+.input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+	margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+<nav>
+ <ul>
+  <li><a class="active" href="linking_home">Home</a></li>
+   
+  
+  <li><a href="/linking">Automated Testing</a></li>
+  
+ </ul>
+</nav>
+  <div class="border-bottom shelf intro-shelf js-notice mb-0 pb-4">
+  <div class="width-full container"> 
+   
+    <div class="width-full mx-auto shelf-content">
+      <h2 class="shelf-title">Reddit Flair Detector
+	  </h2>
+      <p class="shelf-lead">
+	    Here, you can predict the flair of any Reddit India posts using the Post URL.
+      </p>		
+    </div>
+  </div>	
+<div class="ml-container">
+  
+    <form action={{ url_for('predict') }} method="POST">
+    <center><p>Enter the URL here</p><center>
+    <textarea name="url" input type="text" rows="1" cols="100"></textarea>
+    <br/>
+  
+    
+    <center><button type="submit" class="btn btn-default">Predict</button></center>
+  
+</form><br><br>
+  
+</body>
+</html>
+
