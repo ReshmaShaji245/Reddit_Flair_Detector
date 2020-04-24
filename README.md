@@ -37,9 +37,13 @@ The directory Flair-Detector-Model contains all the necessarary files and folder
   
 ## Model selection
   ~ The collected dataset was split into training(70%) and test data(30%). 
+  
   ~The train data was used to train different Machine Learning Algorithms like KNN classification algorithm,Decision Tree classification Algorithm, SVM, and Logistic regression.
+  
   ~Analysis was done based on the accuracy scores of each using the test data. 
+  
   ~Logistic Regression gave the best accuracy score of 78%. 
+  
   ~Thus Logistic Regression was selected and was used to predict the flair from the post URL.
   
   
