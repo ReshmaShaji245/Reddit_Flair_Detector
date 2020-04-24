@@ -23,13 +23,23 @@ The directory Flair-Detector-Model contains all the necessarary files and folder
   ~This file contains the Machine Learning Model that predicts the flair.
   
   
-The Jupyter Notebook Flair_Detector fetches the Reddit India Data using the praw module.
-The Jupyter Notebook Model_Analysis_and_Evaluation selects that ML model with the best test accuracy, that is the Logistic Regression Model.
+### Flair_Detector.ipynb:
+~Reddit India Data was fetched here using the praw module.
+
+### Model_Analysis_and_Evaluation.ipynb:
+~This Jupyter Notebook was used to select that ML model with the best test accuracy score, that is the Logistic Regression Model.
+
+### Reddit_data.csv: 
+~Collected dataset.
 
 ## Data Collection
   ~ The title,body and comments of the Reddit India posts were fetched using the praw module and were cleaned and combined together. This feature was used to train different models.
   
 ## Model selection
-  ~ The collected dataset was used to train different Machine Learning Algorithms like KNN classification algorithm,Decision Tree classification Algorithm, SVM, and Logistic regression and analysis was done based on the accuracy scores of each. Logistic Regression gave the best accuracy score of 78%. Thus Logistic Regression was used selected and was used to predict the flair from the post URL.
+  ~ The collected dataset was split into training(70%) and test data(30%). 
+  ~The train data was used to train different Machine Learning Algorithms like KNN classification algorithm,Decision Tree classification Algorithm, SVM, and Logistic regression.
+  ~Analysis was done based on the accuracy scores of each using the test data. 
+  ~Logistic Regression gave the best accuracy score of 78%. 
+  ~Thus Logistic Regression was selected and was used to predict the flair from the post URL.
   
   
