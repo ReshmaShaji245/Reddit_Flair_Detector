@@ -48,7 +48,7 @@ app = flask.Flask(__name__,template_folder='templates')
 # routes
 
 
-@app.route('/predict',methods=['GET','POST'])
+@app.route('/',methods=['GET','POST'])
 
 def predict():
      if flask.request.method=='GET':
@@ -96,14 +96,6 @@ def automated_testing():
           
          
           return flask.render_template("downloads.html")
-
-@app.route('/linking')
-def linking():
-    return render_template("automated_testing.html")
-
-@app.route('/linking_home')
-def linking_home():
-    return render_template("home.html")
 
 
 
