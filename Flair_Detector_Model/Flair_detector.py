@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-df=pd.read_csv(r"c:\Users\alres\Downloads\reddit_data.csv")
+df=pd.read_csv(r"reddit_data.csv")
 df.head()
 X=df['0']
 Y=df['1']
