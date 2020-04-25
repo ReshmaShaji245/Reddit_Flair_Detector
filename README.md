@@ -42,7 +42,7 @@ The directory Flair-Detector-Model contains all the necessarary files and folder
   
   ~Analysis was done based on the accuracy scores of each using the test data. 
   
-  ~Logistic Regression gave the best accuracy score of 78%. 
+  ~Logistic Regression gave the best accuracy score of 78.7%. 
   
   ~Thus Logistic Regression was selected and was used to predict the flair from the post URL.
   
