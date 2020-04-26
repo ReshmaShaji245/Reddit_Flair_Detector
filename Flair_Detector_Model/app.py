@@ -23,7 +23,7 @@ import praw
 from Flair_detector import lr
 
 reddit=praw.Reddit(client_id='acP3HQrR6pmNDQ',client_secret='9Ii4t82UOtuwc9ADN4Dv_j3hL6E',user_agent='Flair_detector',username='OmegaDeathOmega',password='omegaDeath_')
-UPLOAD_FOLDER = '\Downloads'
+
 
 REPLACE_BY_SPACE = re.compile('[/(){}\[\]\|@,;]')
 BAD_SYMBOLS = re.compile('[^0-9a-z #+_]')
@@ -83,12 +83,9 @@ def automated_testing():
                print('File not uploaded')
                return
           file=flask.request.files['file']
-          file.save(os.path.join("data", file.filename))
-          
-          fp=open("data/"+file.filename,"r")
+          file.save(os.path.join(file.filename))
 
-          
-          
+          fp=open(file.filename,"r")
 
           for line in fp:
              strip_line=line.strip()
