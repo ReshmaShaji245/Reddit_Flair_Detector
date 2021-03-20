@@ -2,7 +2,7 @@ beautifulsoup4==4.9.0
 bs4==0.0.1
 entrypoints==0.3
 Flask==1.1.2
-Jinja2==2.11.1
+Jinja2==2.11.3
 joblib==0.14.1
 json5==0.9.4
 jsonschema==3.2.0
